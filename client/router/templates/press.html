@@ -1,0 +1,12 @@
+<template name="press">
+    <h2 id="about">Q&A</h2>
+
+    {{#if currentUser}}
+        {{> board}}
+        {{> searchForm}}
+
+    {{else}}
+        {{> board}}
+    {{/if}}
+
+</template>

@@ -1,0 +1,41 @@
+<template name="layout">
+    <a href="/">조원 소개</a>
+    <!--위에는 표현할 방법이 없어서 어쩔수 없이 이걸로 한다.-->
+    <!-- <a href="{{pathFor 'home'}}">홈</a> -->
+    <!-- 이렇게도 가능하다.-->
+
+    <a href="{{pathFor 'about'}}">프로젝트 게시판</a>
+    <!--주로 위에처럼 pathFor '패스명' 이렇게 많이 쓴다.-->
+
+    <a href="/press">Q&A</a>
+
+    {{> yield}}
+    <!--{{> Router }}-->
+    <!--이거 생략하면 맨 아래쪽에 라우터가 생긴다-->
+
+    <!--{{> home}}-->
+    <!--{{> about}}-->
+    <!--{{> press}}-->
+    <!--{{> contact}}-->
+
+</template>
+
+<template name="register">
+    <form>
+        <input type="email" name="registerEmail" placeholder="Email">
+        <input type="password" name="registerPassword" placeholder="Password">
+        <input type="submit" value="회원가입">
+    </form>
+</template>
+
+<template name="login">
+    <form>
+        <input type="email" name="loginEmail" placeholder="Email">
+        <input type="password" name="loginPassword" placeholder="Password">
+        <input type="submit" value="로그인">
+    </form>
+</template>
+
+<template name="dashboard">
+    <p><a href="#" class="logout">Logout</a></p>
+</template>

@@ -1,0 +1,24 @@
+<template name="about">
+    <h2 id="about">프로젝트 게시판</h2>
+
+    {{#if currentUser}}
+        {{> board}}
+       {{> searchForm}}
+
+    {{else}}
+        {{> board}}
+        {{/if}}
+
+</template>
+
+<template name = "searchForm">
+    <form>
+        <select name = "list">
+            <option> 제목</option>
+            <option> 글쓴이 </option>
+        </select>
+        <input type="text" align=""/>
+        <input type="button" name="search" value="찾기"/>
+        <a href= "/writing"> 글쓰기 </a>
+    </form>
+</template>
