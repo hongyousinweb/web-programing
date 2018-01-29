@@ -17,6 +17,7 @@ public class MemberController {
 	public String loginPost() {
 		
 		//request.sendRedirect();
+		//test
 		return "redirect:login.do";
 	}
 	public String join() {
