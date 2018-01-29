@@ -25,5 +25,5 @@ public class MemberController {
 	public String changemember() {
 		return null;
 	}
-	test1
+	test12
 }
